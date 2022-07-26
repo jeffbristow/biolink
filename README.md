@@ -1,6 +1,8 @@
 # biolink
 BioLink is a simple one page BioLink layout that works well on desktops and mobile devices.
 
+-- If you know CSS and PHP you can make adjustments to the code faily easy to adjust colors. --
+
 Currently it has icons for some alternative social media platforms. MeWe, Minds, TruthSocial, Gettr, Parler, USA.life, and Gab.
 
 I plan to add more social networks, started with these since most of the biolink tools out there omit them.
