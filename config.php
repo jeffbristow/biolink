@@ -27,9 +27,9 @@ $whatsapp ="yes";
 $sorttype ="asc"; //asc, desc, random are values that can be used
 
 $emailsort ="1";      // Change to a numerical value. Lowest number is highest on page.
-$facebooksort ="2"; 
+$facebooksort ="4"; 
 $gabsort="3";
-$gettrsort="4";
+$gettrsort="2";
 $instagramsort ="5";
 $linkedinsort ="6";
 $mastodonsort ="7";

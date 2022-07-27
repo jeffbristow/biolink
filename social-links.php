@@ -21,6 +21,7 @@
                 </div>
                 
             </div>
+            <br>
 <?php $emaillinkbox = ob_get_clean(); ?>
 
 <?php ob_start(); ?>
@@ -43,6 +44,7 @@
                 </div>
                 
             </div>
+            <br>
 <?php $facebooklinkbox = ob_get_clean(); ?>
 <?php ob_start(); ?>
 
@@ -64,6 +66,7 @@
                 </div>
                 
             </div>
+            <br>
 <?php $twitterlinkbox = ob_get_clean(); ?>
 <?php ob_start(); ?>
 
@@ -85,6 +88,7 @@
                 </div>
                 
             </div>
+            <br>
 <?php $stravalinkbox = ob_get_clean(); ?>
 <?php ob_start(); ?>
 
@@ -106,6 +110,7 @@
                 </div>
                 
             </div>
+            <br>
 <?php $instagramlinkbox = ob_get_clean(); ?>
 <?php ob_start(); ?>
 
@@ -127,6 +132,7 @@
                 </div>
                 
             </div>
+            <br>
 <?php $pintrestlinkbox = ob_get_clean(); ?>
 <?php ob_start(); ?>
 
@@ -148,6 +154,7 @@
                 </div>
                 
             </div>
+            <br>
 <?php $tribellinkbox = ob_get_clean(); ?>
 <?php ob_start(); ?>
 
@@ -169,6 +176,7 @@
                 </div>
                 
             </div>
+            <br>
 <?php $linkedinlinkbox = ob_get_clean(); ?>
 <?php ob_start(); ?>
 
@@ -190,6 +198,7 @@
                 </div>
                 
             </div>
+            <br>
 <?php $mastodonlinkbox = ob_get_clean(); ?>
 <?php ob_start(); ?>
 
@@ -211,6 +220,7 @@
                 </div>
                 
             </div>
+            <br>
 <?php $rumblelinkbox = ob_get_clean(); ?>
 <?php ob_start(); ?>
 
@@ -232,6 +242,7 @@
                 </div>
                 
             </div>
+            <br>
 <?php $telegramlinkbox = ob_get_clean(); ?>
 <?php ob_start(); ?>
 
@@ -253,6 +264,7 @@
                 </div>
                 
             </div>
+            <br>
 <?php $rokfinlinkbox = ob_get_clean(); ?>
 <?php ob_start(); ?>
 
@@ -274,6 +286,7 @@
                 </div>
                 
             </div>
+            <br>
 <?php $whatsapplinkbox = ob_get_clean(); ?>
 
 <?php ob_start(); ?>
@@ -296,6 +309,7 @@
                 </div>
                 
             </div>
+            <br>
 <?php $mewelinkbox = ob_get_clean(); ?>
 <?php ob_start(); ?>
 
@@ -317,6 +331,7 @@
                 </div>
                 
             </div>
+            <br>
 <?php $mindslinkbox = ob_get_clean(); ?>
 <?php ob_start(); ?>
 
@@ -338,6 +353,7 @@
                 </div>
                 
             </div>
+            <br>
 <?php $truthlinkbox = ob_get_clean(); ?>
 <?php ob_start(); ?>
 
@@ -359,6 +375,7 @@
                 </div>
                 
             </div>
+            <br>
 <?php $gettrlinkbox = ob_get_clean(); ?>
 <?php ob_start(); ?>
 
@@ -380,6 +397,7 @@
                 </div>
                 
             </div>
+            <br>
 <?php $parlerlinkbox = ob_get_clean(); ?>
 <?php ob_start(); ?>
 
@@ -401,6 +419,7 @@
                 </div>
                 
             </div>
+            <br>
 <?php $usalinkbox = ob_get_clean(); ?>
 <?php ob_start(); ?>
 
@@ -419,7 +438,8 @@
                 
                     
                 </div>
-            </div>    
+            </div>
+            <br>
 <?php $gablinkbox = ob_get_clean(); ?>
 
 <?php

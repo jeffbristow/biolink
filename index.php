@@ -47,7 +47,7 @@ asort($linkboxes);
 
 // Loop through link boxes
 foreach($linkboxes as $sortedlinkboxes => $val){
-    echo "$sortedlinkboxes <br>";
+    echo "$sortedlinkboxes";
 }
 }
 // Link Boxes dynamically placed in descending sort order based on sort assigned in config.php
@@ -58,7 +58,7 @@ arsort($linkboxes);
 
 // Loop through link boxes
 foreach($linkboxes as $sortedlinkboxes => $val){
-    echo "$sortedlinkboxes <br>";
+    echo "$sortedlinkboxes";
 }
 }
 // Link Boxes dynamically placed in descending sort order based on sort assigned in config.php
@@ -68,7 +68,7 @@ $linkboxes = array($whatsapplinkbox, $rokfinlinkbox, $telegramlinkbox, $rumbleli
 
 // Loop through link boxes
 foreach($linkboxes as $sortedlinkboxes){
-    echo "$sortedlinkboxes <br>";
+    echo "$sortedlinkboxes";
 }
 }
 ?>
