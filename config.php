@@ -21,6 +21,7 @@ $truth="yes";
 $twitter ="yes";
 $usa="yes";
 $whatsapp ="yes";
+$youtube ="yes";
 
 /* Social Sort Values */
 
@@ -46,6 +47,7 @@ $truthsort="17";
 $twittersort ="18";
 $usasort ="19";
 $whatsappsort ="20";
+$youtubesort ="21";
 
 /* Bio Variables */
 $name = "First Name Last Name";
@@ -194,5 +196,12 @@ $truthimage = "truthsocial.png";
 $truthicon = "$imagepath$truthimage";
 $truthtagline = "Follow me on Truth Social";
 $truthdescription ="Donald Trump was banned from Twitter, so he created a new social network.";
+
+/* YouTube Variables */
+$youtubelink = "https://youtube.com/@username";
+$youtubeimage = "youtube.png";
+$youtubeicon = "$imagepath$truthimage";
+$youtubetagline = "Subscribe to me on YouTube";
+$youtubedescription ="The world's largest video sharing site.";
 
 ?>

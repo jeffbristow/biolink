@@ -441,6 +441,26 @@
             </div>
             <br>
 <?php $gablinkbox = ob_get_clean(); ?>
+<?php ob_start(); ?>
+
+            <div class"links">
+                <div class="link-box">
+                
+                    <div class="icons">
+                        <a href="<? echo "$youtubelink"; ?>"><img class="icon" src="<? echo "$youtubeicon"; ?>" alt="<? echo "$youtubetagline"; ?>"></a>
+                    </div>
+                    
+                    
+                    <div class="description">
+                       <h3><? echo "$youtubetagline"; ?></h3>
+                       <a href="<? echo "$youtubelink"; ?>"><? echo "$youtubedescription"; ?></a>
+                    </div>
+                
+                    
+                </div>
+            </div>
+            <br>
+<?php $youtubelinkbox = ob_get_clean(); ?>
 
 <?php
 // Wipe out any items not set to yes in the config.php file
@@ -523,5 +543,9 @@ $usalinkbox="";
 if ( $whatsapp != "yes" )
 {
 $whatsapplinkbox="";    
+}
+if ( $youtube != "yes")
+{
+$youtubelinkbox="";
 }
 ?>
