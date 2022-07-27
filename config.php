@@ -13,7 +13,7 @@ $truth="yes";  // Yes if enabled
 /* Bio Variables */
 $name = "First Name Last Name";
 $tagline ="Find me on Social Media";
-$photoimage = "avatar.png"; 
+$photoimage = "avatar.png"; //Ideal image is 200x200 pixels
 
 $imagepath = "images/";
 $photo = "$imagepath$photoimage";
