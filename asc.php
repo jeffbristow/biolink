@@ -42,33 +42,34 @@ if ($use_sts && isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
 // Link Boxes dynamically placed in ascending sort order based on sort assigned in config.php
 if ( $sorttype == "asc" )
 {
-$linkboxes = array($whatsapplinkbox => $whatsappsort, $rokfinlinkbox => $rokfinsort, $telegramlinkbox => $telegramsort, $rumblelinkbox => $rumblesort, $mastodonlinkbox => $mastodonsort, $linkedinlinkbox => $linkedinsort, $tribellinkbox => $tribelsort, $pintrestlinkbox => $pintrestsort, $emaillinkbox => $emailsort, $facebooklinkbox => $facebooksort, $twitterlinkbox => $twittersort, $stravalinkbox => $stravasort, $instagramlinkbox => $instagramsort, $mewelinkbox => $mewesort, $mindslinkbox  => $mindssort, $truthlinkbox  => $truthsort, $gettrlinkbox  => $gettrsort, $parlerlinkbox  => $parlersort, $usalinkbox  => $usasort, $gablinkbox  => $gabsort);
+$linkboxes = array($mewelinkbox => $mewesort, $mindslinkbox  => $mindssort, $truthlinkbox  => $truthsort, $gettrlinkbox  => $gettrsort, $parlerlinkbox  => $parlersort, $usalinkbox  => $usasort, $gablinkbox  => $gabsort);
 asort($linkboxes); 
 
 // Loop through link boxes
 foreach($linkboxes as $sortedlinkboxes => $val){
-    echo "$sortedlinkboxes";
+    echo "$sortedlinkboxes <br>";
 }
 }
 // Link Boxes dynamically placed in descending sort order based on sort assigned in config.php
 if ( $sorttype == "desc" )
 {
-$linkboxes = array($whatsapplinkbox => $whatsappsort, $rokfinlinkbox => $rokfinsort, $telegramlinkbox => $telegramsort, $rumblelinkbox => $rumblesort, $mastodonlinkbox => $mastodonsort, $linkedinlinkbox => $linkedinsort, $tribellinkbox => $tribelsort, $pintrestlinkbox => $pintrestsort, $emaillinkbox => $emailsort, $facebooklinkbox => $facebooksort, $twitterlinkbox => $twittersort, $stravalinkbox => $stravasort, $instagramlinkbox => $instagramsort, $mewelinkbox => $mewesort, $mindslinkbox  => $mindssort, $truthlinkbox  => $truthsort, $gettrlinkbox  => $gettrsort, $parlerlinkbox  => $parlersort, $usalinkbox  => $usasort, $gablinkbox  => $gabsort);
+$linkboxes = array($mewelinkbox => $mewesort, $mindslinkbox  => $mindssort, $truthlinkbox  => $truthsort, $gettrlinkbox  => $gettrsort, $parlerlinkbox  => $parlersort, $usalinkbox  => $usasort, $gablinkbox  => $gabsort);
 arsort($linkboxes); 
 
 // Loop through link boxes
 foreach($linkboxes as $sortedlinkboxes => $val){
-    echo "$sortedlinkboxes";
+    echo "$sortedlinkboxes <br>";
 }
 }
 // Link Boxes dynamically placed in descending sort order based on sort assigned in config.php
 if ( $sorttype == "random" )
 {
-$linkboxes = array($whatsapplinkbox, $rokfinlinkbox, $telegramlinkbox, $rumblelinkbox, $mastodonlinkbox, $linkedinlinkbox, $tribellinkbox, $pintrestlinkbox, $emaillinkbox, $facebooklinkbox, $twitterlinkbox, $stravalinkbox, $instagramlinkbox, $mewelinkbox, $mindslinkbox, $truthlinkbox, $gettrlinkbox, $parlerlinkbox, $usalinkbox, $gablinkbox);
+$linkboxes = array($mewelinkbox, $mindslinkbox, $truthlinkbox, $gettrlinkbox, $parlerlinkbox, $usalinkbox, $gablinkbox);
+shuffle($linkboxes); 
 
 // Loop through link boxes
 foreach($linkboxes as $sortedlinkboxes){
-    echo "$sortedlinkboxes";
+    echo "$sortedlinkboxes <br>";
 }
 }
 ?>
