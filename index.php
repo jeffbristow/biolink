@@ -11,7 +11,7 @@ if ($use_sts && isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
     die();
 }
 ?>
-<?php include 'config.php';?>
+<?php include 'social-links.php';?>
 
 <html>
     <head>
@@ -36,150 +36,45 @@ if ($use_sts && isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
        
            
             
-            <div class"links>
-            
-                <div class="link-box">
-                
-                    <div class="icons">
-                        <a href="<? echo "$mewelink"; ?>"><img class="icon" src="<? echo "$meweicon"; ?>" alt="<? echo "$mewetagline"; ?>"></a>
-                    </div>
-                    
-                    
-                    <div class="description">
-                       <h3><? echo "$mewetagline"; ?></h3>
-                       <a href="<? echo "$mewelink"; ?>"><? echo "$mewedescription"; ?></a>
-                    </div>
-                
-                    
-                </div>
-                
-            </div>
-            
-            <br />
-            
-           <div class"links>
-            
-                <div class="link-box">
-                
-                    <div class="icons">
-                        <a href="<? echo "$mindslink"; ?>"><img class="icon" src="<? echo "$mindsicon"; ?>" alt="<? echo "$mindstagline"; ?>"></a>
-                    </div>
-                    
-                    
-                    <div class="description">
-                       <h3><? echo "$mindstagline"; ?></h3>
-                       <a href="<? echo "$mindslink"; ?>"><? echo "$mindsdescription"; ?></a>
-                    </div>
-                
-                    
-                </div>
-                
-            </div>
-            
-            <br />
-            
-            <div class"links>
-            
-                <div class="link-box">
-                
-                    <div class="icons">
-                        <a href="<? echo "$truthlink"; ?>"><img class="icon" src="<? echo "$truthicon"; ?>" alt="<? echo "$truthtagline"; ?>"></a>
-                    </div>
-                    
-                    
-                    <div class="description">
-                       <h3><? echo "$truthtagline"; ?></h3>
-                       <a href="<? echo "$truthlink"; ?>"><? echo "$truthdescription"; ?></a>
-                    </div>
-                
-                    
-                </div>
-                
-            </div>
-            
-            <br />
-        
-                
-            <div class"links>
-            
-                <div class="link-box">
-                
-                    <div class="icons">
-                        <a href="<? echo "$gettrlink"; ?>"><img class="icon" src="<? echo "$gettricon"; ?>" alt="<? echo "$gettrtagline"; ?>"></a>
-                    </div>
-                    
-                    
-                    <div class="description">
-                       <h3><? echo "$gettrtagline"; ?></h3>
-                       <a href="<? echo "$gettrlink"; ?>"><? echo "$gettrdescription"; ?></a>
-                    </div>
-                
-                    
-                </div>
-                
-            </div>
-            
-            <br />
-            
-            <div class"links>
-            
-                <div class="link-box">
-                
-                    <div class="icons">
-                        <a href="<? echo "$parlerlink"; ?>"><img class="icon" src="<? echo "$parlericon"; ?>" alt="<? echo "$parlertagline"; ?>"></a>
-                    </div>
-                    
-                    
-                    <div class="description">
-                       <h3><? echo "$parlertagline"; ?></h3>
-                       <a href="<? echo "$parlerlink"; ?>"><? echo "$parlerdescription"; ?></a>
-                    </div>
-                
-                    
-                </div>
-                
-            </div>
-            
-            <br />
-             
-            <div class"links>
-            
-                <div class="link-box">
-                
-                    <div class="icons">
-                        <a href="<? echo "$usalink"; ?>"><img class="icon" src="<? echo "$usaicon"; ?>" alt="<? echo "$usatagline"; ?>"></a>
-                    </div>
-                    
-                    
-                    <div class="description">
-                       <h3><? echo "$usatagline"; ?></h3>
-                       <a href="<? echo "$usalink"; ?>"><? echo "$usadescription"; ?></a>
-                    </div>
-                
-                    
-                </div>
-                
-            </div>
-            
-            <br />
-            
-                <div class="link-box">
-                
-                    <div class="icons">
-                        <a href="<? echo "$gablink"; ?>"><img class="icon" src="<? echo "$gabicon"; ?>" alt="<? echo "$gabtagline"; ?>"></a>
-                    </div>
-                    
-                    
-                    <div class="description">
-                       <h3><? echo "$gabtagline"; ?></h3>
-                       <a href="<? echo "$gablink"; ?>"><? echo "$gabdescription"; ?></a>
-                    </div>
-                
-                    
-                </div>
+<?php 
+
+
+// Link Boxes dynamically placed in ascending sort order based on sort assigned in config.php
+if ( $sorttype == "asc" )
+{
+$linkboxes = array($whatsapplinkbox => $whatsappsort, $rokfinlinkbox => $rokfinsort, $telegramlinkbox => $telegramsort, $rumblelinkbox => $rumblesort, $mastodonlinkbox => $mastodonsort, $linkedinlinkbox => $linkedinsort, $tribellinkbox => $tribelsort, $pintrestlinkbox => $pintrestsort, $emaillinkbox => $emailsort, $facebooklinkbox => $facebooksort, $twitterlinkbox => $twittersort, $stravalinkbox => $stravasort, $instagramlinkbox => $instagramsort, $mewelinkbox => $mewesort, $mindslinkbox  => $mindssort, $truthlinkbox  => $truthsort, $gettrlinkbox  => $gettrsort, $parlerlinkbox  => $parlersort, $usalinkbox  => $usasort, $gablinkbox  => $gabsort);
+asort($linkboxes); 
+
+// Loop through link boxes
+foreach($linkboxes as $sortedlinkboxes => $val){
+    echo "$sortedlinkboxes <br>";
+}
+}
+// Link Boxes dynamically placed in descending sort order based on sort assigned in config.php
+if ( $sorttype == "desc" )
+{
+$linkboxes = array($whatsapplinkbox => $whatsappsort, $rokfinlinkbox => $rokfinsort, $telegramlinkbox => $telegramsort, $rumblelinkbox => $rumblesort, $mastodonlinkbox => $mastodonsort, $linkedinlinkbox => $linkedinsort, $tribellinkbox => $tribelsort, $pintrestlinkbox => $pintrestsort, $emaillinkbox => $emailsort, $facebooklinkbox => $facebooksort, $twitterlinkbox => $twittersort, $stravalinkbox => $stravasort, $instagramlinkbox => $instagramsort, $mewelinkbox => $mewesort, $mindslinkbox  => $mindssort, $truthlinkbox  => $truthsort, $gettrlinkbox  => $gettrsort, $parlerlinkbox  => $parlersort, $usalinkbox  => $usasort, $gablinkbox  => $gabsort);
+arsort($linkboxes); 
+
+// Loop through link boxes
+foreach($linkboxes as $sortedlinkboxes => $val){
+    echo "$sortedlinkboxes <br>";
+}
+}
+// Link Boxes dynamically placed in descending sort order based on sort assigned in config.php
+if ( $sorttype == "random" )
+{
+$linkboxes = array($whatsapplinkbox, $rokfinlinkbox, $telegramlinkbox, $rumblelinkbox, $mastodonlinkbox, $linkedinlinkbox, $tribellinkbox, $pintrestlinkbox, $emaillinkbox, $facebooklinkbox, $twitterlinkbox, $stravalinkbox, $instagramlinkbox, $mewelinkbox, $mindslinkbox, $truthlinkbox, $gettrlinkbox, $parlerlinkbox, $usalinkbox, $gablinkbox);
+
+// Loop through link boxes
+foreach($linkboxes as $sortedlinkboxes){
+    echo "$sortedlinkboxes <br>";
+}
+}
+?>
             
             
-            <div class="footer">
+                       <div class="footer">
                 <p>&copy; <?php 
                     $year = date("Y"); 
                     
@@ -187,7 +82,8 @@ if ($use_sts && isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
                     // Display the year
                         echo $year; 
   
-?> <? echo "$name"; ?> - Hand coded with &#10084;
+?> <? echo "$name"; ?> - Hand coded with &#10084;<br />
+<a href="https://github.com/jeffbristow/biolink/archive/refs/heads/main.zip">Download v.01 source code</a> or <a href="https://github.com/jeffbristow/biolink">join me on git</a> to improve the project
 </P>
                 
             </div>
