@@ -1,4 +1,15 @@
 <?php
+
+/* Social Link toggles /*
+/* Enable Specific Social Networks */
+$mewe ="yes";  // Yes if enabled
+$minds="yes";   // Yes if enabled
+$gettr="yes";   // Yes if enabled
+$parler="yes";  // Yes if enabled
+$usa="yes";  // Yes if enabled
+$gab="yes";  // Yes if enabled
+$truth="yes";  // Yes if enabled
+
 /* Bio Variables */
 $name = "First Name Last Name";
 $tagline ="Find me on Social Media";

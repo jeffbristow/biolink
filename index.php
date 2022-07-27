@@ -36,6 +36,8 @@ if ($use_sts && isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
        
            
             
+<?php if ( $mewe == "yes" ) { ?> 
+         
             <div class"links>
             
                 <div class="link-box">
@@ -56,7 +58,10 @@ if ($use_sts && isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
             </div>
             
             <br />
-            
+<?php } ?>
+  
+
+<?php if ( $minds == "yes" ) { ?>             
            <div class"links>
             
                 <div class="link-box">
@@ -77,7 +82,10 @@ if ($use_sts && isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
             </div>
             
             <br />
-            
+<?php } ?>    
+
+
+<?php if ( $truth == "yes" ) { ?>                
             <div class"links>
             
                 <div class="link-box">
@@ -99,7 +107,9 @@ if ($use_sts && isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
             
             <br />
         
-                
+<?php } ?>    
+            
+<?php if ( $gettr == "yes" ) { ?>                  
             <div class"links>
             
                 <div class="link-box">
@@ -120,7 +130,9 @@ if ($use_sts && isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
             </div>
             
             <br />
-            
+<?php } ?>  
+
+<?php if ( $parler == "yes" ) { ?> 
             <div class"links>
             
                 <div class="link-box">
@@ -141,7 +153,9 @@ if ($use_sts && isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
             </div>
             
             <br />
-             
+<?php } ?> 
+
+<?php if ( $usa == "yes" ) { ?> 
             <div class"links>
             
                 <div class="link-box">
@@ -162,7 +176,9 @@ if ($use_sts && isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
             </div>
             
             <br />
+<?php } ?>             
             
+<?php if ( $gab == "yes" ) { ?>             
                 <div class="link-box">
                 
                     <div class="icons">
@@ -177,7 +193,7 @@ if ($use_sts && isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
                 
                     
                 </div>
-            
+<?php } ?>              
             
             <div class="footer">
                 <p>&copy; <?php 
@@ -187,7 +203,8 @@ if ($use_sts && isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
                     // Display the year
                         echo $year; 
   
-?> <? echo "$name"; ?> - Hand coded with &#10084;
+?> <? echo "$name"; ?> - Hand coded with &#10084;<br />
+<a href="https://github.com/jeffbristow/biolink/archive/refs/heads/main.zip">Download v.01 source code</a> or <a href="https://github.com/jeffbristow/biolink">join me on git</a> to improve the project
 </P>
                 
             </div>
