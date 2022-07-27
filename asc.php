@@ -36,12 +36,41 @@ if ($use_sts && isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
        
            
             
-<?php $linkboxes = array($mewelinkbox => $mewesort, $mindslinkbox  => $mindssort, $truthlinkbox  => $truthsort, $gettrlinkbox  => $gettrsort, $parlerlinkbox  => $parlersort, $usalinkbox  => $usasort, $gablinkbox  => $gabsort);
+<?php 
+
+
+// Link Boxes dynamically placed in ascending sort order based on sort assigned in config.php
+if ( $sorttype == "asc" )
+{
+$linkboxes = array($mewelinkbox => $mewesort, $mindslinkbox  => $mindssort, $truthlinkbox  => $truthsort, $gettrlinkbox  => $gettrsort, $parlerlinkbox  => $parlersort, $usalinkbox  => $usasort, $gablinkbox  => $gabsort);
 asort($linkboxes); 
 
 // Loop through link boxes
 foreach($linkboxes as $sortedlinkboxes => $val){
     echo "$sortedlinkboxes <br>";
+}
+}
+// Link Boxes dynamically placed in descending sort order based on sort assigned in config.php
+if ( $sorttype == "desc" )
+{
+$linkboxes = array($mewelinkbox => $mewesort, $mindslinkbox  => $mindssort, $truthlinkbox  => $truthsort, $gettrlinkbox  => $gettrsort, $parlerlinkbox  => $parlersort, $usalinkbox  => $usasort, $gablinkbox  => $gabsort);
+arsort($linkboxes); 
+
+// Loop through link boxes
+foreach($linkboxes as $sortedlinkboxes => $val){
+    echo "$sortedlinkboxes <br>";
+}
+}
+// Link Boxes dynamically placed in descending sort order based on sort assigned in config.php
+if ( $sorttype == "random" )
+{
+$linkboxes = array($mewelinkbox, $mindslinkbox, $truthlinkbox, $gettrlinkbox, $parlerlinkbox, $usalinkbox, $gablinkbox);
+shuffle($linkboxes); 
+
+// Loop through link boxes
+foreach($linkboxes as $sortedlinkboxes){
+    echo "$sortedlinkboxes <br>";
+}
 }
 ?>
             

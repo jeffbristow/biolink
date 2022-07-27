@@ -11,6 +11,8 @@ $truth="yes";
 
 /* Social Sort Values */
 
+$sorttype ="asc"; //asc, desc, random are values that can be used
+
 $mewesort ="3";  // Change to a numerical values. Lowest number is highest on page.
 $mindssort="1";   
 $gettrsort="4";   
