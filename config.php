@@ -1,19 +1,28 @@
 <?php
 
-/* Social Link toggles /*
 /* Enable Specific Social Networks */
 $mewe ="yes";  // Yes if enabled
-$minds="yes";   // Yes if enabled
-$gettr="yes";   // Yes if enabled
-$parler="yes";  // Yes if enabled
-$usa="yes";  // Yes if enabled
-$gab="yes";  // Yes if enabled
-$truth="yes";  // Yes if enabled
+$minds="yes";   
+$gettr="yes";   
+$parler="yes";  
+$usa="yes";  
+$gab="yes";  
+$truth="yes";  
+
+/* Social Sort Values */
+
+$mewesort ="3";  // Change to a numerical values. Lowest number is highest on page.
+$mindssort="1";   
+$gettrsort="4";   
+$parlersort="2";  
+$usasort="5";  
+$gabsort="6";  
+$truthsort="7";  
 
 /* Bio Variables */
 $name = "First Name Last Name";
 $tagline ="Find me on Social Media";
-$photoimage = "avatar.png"; 
+$photoimage = "avatar.png"; //Ideal image is 200x200 pixels
 
 $imagepath = "images/";
 $photo = "$imagepath$photoimage";

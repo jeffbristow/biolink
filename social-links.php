@@ -1,41 +1,6 @@
-<?
-// Use HTTP Strict Transport Security to force client to use secure connections only
-$use_sts = true;
+<?php include 'config.php'; ?>
+<?php ob_start(); ?>
 
-// iis sets HTTPS to 'off' for non-SSL requests
-if ($use_sts && isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
-    header('Strict-Transport-Security: max-age=31536000');
-} elseif ($use_sts) {
-    header('Location: https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'], true, 301);
-    // we are in cleartext at the moment, prevent further execution and output
-    die();
-}
-?>
-<?php include 'config.php';?>
-
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" media="screen and (max-width: 850px)" href="mobile-bio.css">
-        <link rel="stylesheet" media="screen and (min-width: 851px)" href="bio.css">
-         <title><? echo "$tagline"; ?></title>
-    </head>
-    
-    <body>
-        
-         <div class="content">
-             
-        <div class="avatar">
-            <img src="<? echo "$photo"; ?>" alt="Photo">
-        </div>
-        
-        <div class="name">
-            <h1><? echo "$name"; ?></h1>
-            <h3><? echo "$tagline"; ?></h3>
-        </div>
-       
-           
-            
             <div class"links>
             
                 <div class="link-box">
@@ -54,10 +19,10 @@ if ($use_sts && isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
                 </div>
                 
             </div>
-            
-            <br />
-            
-           <div class"links>
+<?php $mewelinkbox = ob_get_clean(); ?>
+<?php ob_start(); ?>
+
+            <div class"links>
             
                 <div class="link-box">
                 
@@ -75,10 +40,10 @@ if ($use_sts && isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
                 </div>
                 
             </div>
-            
-            <br />
-            
-            <div class"links>
+<?php $mindslinkbox = ob_get_clean(); ?>
+<?php ob_start(); ?>
+
+          <div class"links>
             
                 <div class="link-box">
                 
@@ -96,11 +61,10 @@ if ($use_sts && isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
                 </div>
                 
             </div>
-            
-            <br />
-        
-                
-            <div class"links>
+<?php $truthlinkbox = ob_get_clean(); ?>
+<?php ob_start(); ?>
+
+   <div class"links>
             
                 <div class="link-box">
                 
@@ -118,9 +82,9 @@ if ($use_sts && isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
                 </div>
                 
             </div>
-            
-            <br />
-            
+<?php $gettrlinkbox = ob_get_clean(); ?>
+<?php ob_start(); ?>
+
             <div class"links>
             
                 <div class="link-box">
@@ -139,9 +103,9 @@ if ($use_sts && isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
                 </div>
                 
             </div>
-            
-            <br />
-             
+<?php $parlerlinkbox = ob_get_clean(); ?>
+<?php ob_start(); ?>
+
             <div class"links>
             
                 <div class="link-box">
@@ -160,9 +124,9 @@ if ($use_sts && isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
                 </div>
                 
             </div>
-            
-            <br />
-            
+<?php $usalinkbox = ob_get_clean(); ?>
+<?php ob_start(); ?>
+
                 <div class="link-box">
                 
                     <div class="icons">
@@ -177,21 +141,4 @@ if ($use_sts && isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
                 
                     
                 </div>
-            
-            
-            <div class="footer">
-                <p>&copy; <?php 
-                    $year = date("Y"); 
-                    
-  
-                    // Display the year
-                        echo $year; 
-  
-?> <? echo "$name"; ?> - Hand coded with &#10084;
-</P>
-                
-            </div>
-            
-        </div>
-    </body>
-</html>
+<?php $gablinkbox = ob_get_clean(); ?>
