@@ -200,7 +200,7 @@ $truthdescription ="Donald Trump was banned from Twitter, so he created a new so
 /* YouTube Variables */
 $youtubelink = "https://youtube.com/@username";
 $youtubeimage = "youtube.png";
-$youtubeicon = "$imagepath$truthimage";
+$youtubeicon = "$imagepath$youtubeimage";
 $youtubetagline = "Subscribe to me on YouTube";
 $youtubedescription ="The world's largest video sharing site.";
 
