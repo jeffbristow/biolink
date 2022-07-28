@@ -11,3 +11,5 @@ The config.php file has PHP variables that can be easily updated with links to t
 If you know CSS and PHP you can make adjustments to the code fairly easy to adjust colors. Adding variables in config.php for colors is a likely addition in the future.
 
 If you need some level of link tracking, this tool can't do that. However, you could use a selfhosted setup like https://yourls.org/ to create trackable links and plug those links into the link variable for each social media account in config.php.
+
+A demo of the latest version of this code can be viewed here: http://simplebiolink-demo.bristow.one/
